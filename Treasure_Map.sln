@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Treasure_Map", "Treasure_Map\Treasure_Map.csproj", "{12C803C2-9344-44F0-B0F7-9B461F46E147}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12C803C2-9344-44F0-B0F7-9B461F46E147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C803C2-9344-44F0-B0F7-9B461F46E147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C803C2-9344-44F0-B0F7-9B461F46E147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C803C2-9344-44F0-B0F7-9B461F46E147}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63CA8F40-0AAC-4F02-9D9F-EC9DB092B38A}
+	EndGlobalSection
+EndGlobal
