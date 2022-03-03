@@ -42,7 +42,7 @@ namespace ArrayTest
             int i = 0;
             int counter = 0;
 
-            List<Entry> cood = new List<Entry>();
+            List<Entry> coord = new List<Entry>();
 
             while(buffer != null)
             {
@@ -68,7 +68,7 @@ namespace ArrayTest
 
                 }
 
-                cood.Add(new Entry(pt1, Int32.Parse(pt2)));
+                coord.Add(new Entry(pt1, Int32.Parse(pt2)));
 
                 buffer = sr.ReadLine();
                 pt1 = "";
@@ -76,9 +76,10 @@ namespace ArrayTest
                 i = 0;
                 counter = 0;
 
+
             }
 
-            foreach(Entry entry in cood)
+            foreach(Entry entry in coord)
             {
                 Console.WriteLine(entry.strDirection + ", " +  entry.intSteps);
             }
@@ -111,7 +112,7 @@ namespace ArrayTest
             Coordinate position = new Coordinate(10, 10); ;
             playField[position.x, position.y] = "¤";
 
-            foreach (Entry entry in cood)
+            foreach (Entry entry in coord)
             {
                 int deltaX = 0;
                 int deltaY = 0;
