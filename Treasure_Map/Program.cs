@@ -32,7 +32,10 @@ namespace ArrayTest
 
         static void Main(string[] args)
         {
-            StreamReader sr = File.OpenText("C:\\Users\\ItsCloudxo\\source\\repos\\Treasure_Map\\Input_Text.txt");
+
+
+            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Source\\repos\\Treasure_Map\\Input_Text.txt");
+            StreamReader sr = File.OpenText(path);
             string buffer = sr.ReadLine();
             string pt1 = "";
             string pt2 = "";
@@ -50,15 +53,19 @@ namespace ArrayTest
                     {
                         counter++;
                     }
+
                     if (counter == 0 && buffer[i] != ',')
                     {
                         pt1 += buffer[i];
                     }
+
                     if (counter == 1 && buffer[i] != ',')
                     {
                         pt2 += buffer[i];
                     }
+
                     i++;
+
                 }
 
                 cood.Add(new Entry(pt1, Int32.Parse(pt2)));
@@ -77,7 +84,7 @@ namespace ArrayTest
             }
 
 
-            ////Entry[] myCustomArray = { new Entry("W", 8), new Entry("NW", 2), new Entry("N", 2), new Entry("NE", 2) };
+            //Entry[] myCustomArray = { new Entry("W", 8), new Entry("NW", 2), new Entry("N", 2), new Entry("NE", 2) };
 
             string[,] playField = {
                 { " ", " "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ",},
